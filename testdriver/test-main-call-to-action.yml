@@ -1,0 +1,34 @@
+version: 4.0.79
+steps:
+  - prompt: Click the "Book a demo" button.
+    commands:
+      - command: hover-text
+        text: Book a demo
+        description: button to book a demo
+        action: click
+  - prompt: Click the "Book a demo" button.
+    commands:
+      - command: hover-text
+        text: Book a demo
+        description: button to book a demo
+        action: click
+      - command: wait
+        timeout: 2000
+  - prompt: >-
+      Assert that a scheduling form or page appears.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: a scheduling form is visible
+  - prompt: >-
+      Assert that a scheduling form or page appears.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: a scheduling form is visible
+  - prompt: >-
+      Assert that a scheduling form or page appears.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: a scheduling form is visible
