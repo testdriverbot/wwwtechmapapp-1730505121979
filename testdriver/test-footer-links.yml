@@ -1,0 +1,42 @@
+version: 4.0.79
+steps:
+  - prompt: >-
+      Click on each link in the footer  # Use the content of the file from the
+      environment
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: >-
+      Click on each link in the footer  # Use the content of the file from the
+      environment
+    commands:
+      - command: scroll-until-text
+        text: The
+        direction: down
+      - command: hover-text
+        text: What is TechMap?
+        description: link in the footer
+        action: click
+      - command: hover-text
+        text: See our reviews on Trustpilot
+        description: link in the footer
+        action: click
+  - prompt: >-
+      Click on each link in the footer  # Use the content of the file from the
+      environment
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: scroll-until-text
+        text: The
+        direction: down
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
+      - command: wait
+        timeout: 3000
+      - command: hover-text
+        text: Terms of Service
+        description: link in the footer
+        action: click
