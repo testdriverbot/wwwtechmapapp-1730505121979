@@ -1,0 +1,22 @@
+version: 4.0.79
+steps:
+  - prompt: Click the "Sign in" button.
+    commands:
+      - command: hover-text
+        text: Sign in
+        description: button in the header
+        action: click
+  - prompt: Click the "Sign in" button.
+    commands:
+      - command: hover-text
+        text: Sign in
+        description: button in the header
+        action: click
+      - command: wait
+        timeout: 2000
+  - prompt: Assert that a login form is displayed.
+    commands:
+      - command: wait
+        timeout: 5000
+      - command: assert
+        expect: the login form is displayed
