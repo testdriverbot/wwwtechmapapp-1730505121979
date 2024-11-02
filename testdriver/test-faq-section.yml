@@ -1,0 +1,25 @@
+version: 4.0.79
+steps:
+  - prompt: Scroll down to find the FAQ section.
+    commands:
+      - command: scroll-until-text
+        text: FAQ
+        direction: down
+  - prompt: Click to expand a question.
+    commands:
+      - command: hover-text
+        text: What you'll learn
+        description: question in the FAQ section
+        action: click
+  - prompt: Click to expand a question.
+    commands:
+      - command: hover-text
+        text: What is coding?
+        description: question in the FAQ section
+        action: click
+  - prompt: Click to expand a question.
+    commands:
+      - command: hover-text
+        text: How are programs designed?
+        description: question in the FAQ section
+        action: click
