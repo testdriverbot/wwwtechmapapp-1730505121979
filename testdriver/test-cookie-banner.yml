@@ -1,0 +1,20 @@
+version: 4.0.79
+steps:
+  - prompt: If a cookie banner appears, click to accept cookies.
+    commands:
+      - command: hover-text
+        text: Accept Cookies
+        description: button to accept cookies
+        action: click
+  - prompt: If a cookie banner appears, click to accept cookies.
+    commands:
+      - command: hover-text
+        text: I Agree
+        description: button to accept cookies
+        action: click
+  - prompt: If a cookie banner appears, click to accept cookies.
+    commands:
+      - command: hover-text
+        text: Allow Cookies
+        description: button to accept cookies
+        action: click
