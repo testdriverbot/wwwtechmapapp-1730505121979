@@ -1,0 +1,33 @@
+version: 4.0.79
+steps:
+  - prompt: Click the "Contact Us" link in the header or footer.
+    commands:
+      - command: scroll-until-text
+        text: Contact Us
+        direction: down
+      - command: hover-text
+        text: Contact Us
+        description: link in the footer
+        action: click
+  - prompt: Click the "Contact Us" link in the header or footer.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: scroll-until-text
+        text: Contact Us
+        direction: down
+      - command: hover-text
+        text: Contact Us
+        description: link in the footer
+        action: click
+  - prompt: Click the "Contact Us" link in the header or footer.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: scroll-until-text
+        text: Contact Us
+        direction: up
+      - command: hover-text
+        text: Contact Us
+        description: link in the header
+        action: click
